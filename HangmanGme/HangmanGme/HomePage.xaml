@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HangmanGme.HomePage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFEBC1">
+            <Frame BackgroundColor="#D7A86E"  Padding="24" CornerRadius="0">
+                <Label Text="Hangman" HorizontalTextAlignment="Center" TextColor="#8E3200" FontSize="36"/>
+            </Frame>
+            <Label Text="Welcome to Hangman" TextColor="#8E3200" HorizontalOptions="CenterAndExpand" FontSize="14"/>
+
+            <Button x:Name="_Easy" 
+                Text="Easy" 
+                TextColor="#8E3200" 
+                BackgroundColor="#D7A86E" 
+                HorizontalOptions="Center"
+                VerticalOptions="EndAndExpand"
+                WidthRequest="300"
+                CornerRadius="10"
+                Clicked="_Easy_Clicked"/>
+            <Button x:Name="_Medium" 
+                Text="Intermediate" 
+                TextColor="#8E3200" 
+                BackgroundColor="#D7A86E" 
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                WidthRequest="300"
+                CornerRadius="10"
+                Clicked="_Medium_Clicked"/>
+            <Button x:Name="_Hard" 
+                Text="Diffifult" 
+                TextColor="#8E3200" 
+                BackgroundColor="#D7A86E" 
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                WidthRequest="300"
+                CornerRadius="10"
+                Clicked="_Hard_Clicked"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
